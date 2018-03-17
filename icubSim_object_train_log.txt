@@ -1,0 +1,366 @@
+To set up a white huge wall for background:
+
+command:
+
+world mk sbox 8 8 2 0 3 3 255 255 255
+
+This creates a static cube with 8 and 8 units of length in x and y direction and 2 units in z direction (depth) (x, y, z are in the world frame; different than those from robot's frame)
+
+world mk sbox [x, y, z (dimension of the new object)] [x, y, z (position in the world frame)] [R G B value]
+
+Trainging session 1:
+02/26/2018 02:22 PM Grainger IDEA Lab
+1.
+(here I let x, y, z = [0 1 1]) --> medium
+object: blue medium ball
+blue --> lightblue.bmp
+size --> medium [0, 1, 1]
+shape --> ball
+4 pictures taken
+2.
+object: blue medium ball
+blue --> dark_blue.bmp
+size --> medium [0, 1, 1]
+shape --> ball
+2 pictures taken at pos 0, and 2 taken at pos 4
+3.
+object: blue medium square
+blue --> world mk sbox 1 1 1 0 1 2 0 1 250
+size -->medium [1, 1, 1] [0, 1, 2]
+shape --> square [1, 1, 1]
+2 pircures taken at pos 0, 2 taken at pos 4, and 2 taken at pos 2
+# instead of saying the position / depth as a reference as size
+# I am going to declare that object is large if it feels like it fills up 75% of the image
+# image is of 320 x 240 [Width Height]
+4.
+object: blue medium square
+blue --> world mk sbox 0.85 0.85 0.85 0 1 2 0.3 0.3 253.4
+size --> medium [0.85, 0.85, 0.85] [0, 1, 2]
+shape --> square [0.85, 0.85, 0.85]
+2 pictures taken with pos 0
+5. 
+object: blue medium square
+blue --> world mk sbox 0.85 0.85 0.85 0 1 2 0.5 0.5 253.4
+size --> medium [0.85, 0.85, 0.85] [0, 1, 2]
+shape --> square [0.85, 0.85, 0.85]
+2 pictures taken with pos 2
+6. 
+object: yellow medium square
+yellow --> world mk sbox 0.85 0.85 0.85 0 1.01 2.03 253 247 0.2
+size --> medium [0.85, 0.85, 0.85] [0, 1.01, 2.03]
+shape --> square [0.85, 0.85, 0.85]
+2 pictures taken with pos 2
+7.
+object: yellow medium square
+yellow --> world mk sbox 0.85 0.85 0.85 0 0.95 1.98 90 24 0.03
+size --> medium [0.85, 0.85, 0.85] [0, 0.95, 1.98]
+shape --> square [0.85, 0.85, 0.85]
+2 pictures take with pos 0
+8.
+object: blue small square
+blue --> world mk sbox 0.85 0.85 0.85 0 1 2.9 0.7 0.65 100.0
+size --> small [0.85, 0.85, 0.85] [0, 1, 2.9]
+shape --> square [0.85, 0.85, 0.85]
+2 pictures taken with pos 4 (to avoid the horizion / floor)
+shape slightly changes, but not very noticable
+9.
+object: blue small square
+blue --> world mk sbox 0.4 0.4 0.4 0 1 2 0.7 0.65 100.0
+size --> small [0.4, 0.4, 0.4] [0, 1, 2]
+shape --> square [0.4, 0.4, 0.4]
+2 pictures taken with pos 4 (to avoid the horizion / floor)
+shape slightly changes, but not very noticable
+10.
+object: green small square
+green --> world mk sbox 0.45 0.45 0.45 0 1 2 0.3 100 0.4
+size --> small [0.45, 0.45, 0.45] [0, 1, 2]
+shape --> square [0.45, 0.45, 0.45]
+2 pictures taken with pos 4 (to avoid the horizion / floor)
+shape slightly changes, but not very noticable
+11.
+object: green small square
+green --> world mk sbox 0.42 0.42 0.42 0 1 2 0.2 235 0.4
+size --> small [0.42, 0.42, 0.42] [0, 1, 2]
+shape --> square [0.42, 0.42, 0.42]
+2 pictures taken with pos 4 (to avoid the horizion / floor)
+shape slightly changes, but not very noticable
+12.
+object: red small square
+red --> world mk sbox 0.44 0.44 0.44 0 1 2 253 0.1 0.1
+size --> small [0.44, 0.44, 0.44] [0, 1, 2]
+shape --> square [0.44, 0.44, 0.44]
+2 pictures taken with pos 4 (to avoid the horizion / floor)
+shape slightly changes, but not very noticable
+13.
+object: red medium ball
+red --> world mk scyl 0.41 0 1 2 0.98 0.024 0.030
+size --> medium [0.41, 0.5] [0, 1, 2]
+shape --> circle [0.41, 0.5]
+2 pictures taken with pos 4 (to avoid the horizion / floor)
+shape slightly changes, but not very noticable
+14.
+object: red large ball
+red --> world mk scyl 0.41 0.5 0 1 1.2 0.94 0.01 0.2
+size --> large [0.41, 0.5] [0, 1, 1.2]
+shape --> circle [0.41, 0.5]
+2 pictures taken with pos 4 (to avoid the horizion / floor)
+shape slightly changes, but not very noticable
+15.
+object: yellow large ball
+yellow --> world mk scyl 0.41 0.5 0 1 1.212 0.98 0.94 0.015
+size --> large [0.41, 0.5] [0, 1, 1.212]
+shape --> circle [0.41, 0.5]
+2 pictures taken with pos 4 (to avoid the horizion / floor)
+shape slightly changes, but not very noticable
+16.
+object: pink large ball
+pink --> world mk scyl 0.41 0.5 0 1 1.212 0.96 0.6 0.8
+size --> large [0.41, 0.5] [0, 1, 1.212]
+shape --> circle [0.41, 0.5]
+2 pictures taken with pos 4 (to avoid the horizion / floor)
+shape slightly changes, but not very noticable
+17.
+object: pink medium ball
+pink --> world mk scyl 0.41 0.5 0 1 1.47 0.97 0.65 0.85
+size --> large [0.41, 0.5] [0, 1, 1.47]
+shape --> circle [0.41, 0.5]
+2 pictures taken with pos 4 (to avoid the horizion / floor)
+shape slightly changes, but not very noticable
+
+# My plan and goal:
+have 45 training data
+have the rest as testing data
+first just create as many variation as possible
+training:
+2 images per combination
+I have:
+3 shapes
+5 colors
+3 sizes
+--> 45 unique combinations
+--> need at least 5 data to cover all cases
+
+
+# set wall to the following setting:
+position: [0, 3, 6]
+rotation: [-10, 0, 0]
+# set iCub's head to pos 0 24 (30 is the maximum angle for the thrid axis)
+18.
+object: blue large star
+command: world mk smodel star_triangular_faces.x pure_blue.bmp 0 3.0 4.7
+rotation: [-10, 0, 0]
+blue --> pure_blue.bmp
+size --> large
+shape --> star star_with_triangular_faces.x
+2 pictures taken
+19.
+object: blue small star
+command: world mk smodel star_triangular_faces.x lightblue.bmp 0 3.0 5.24
+rotation: [-10, 0, 0]
+blue --> lightblue.bmp
+size --> small
+shape --> star star_with_triangular_faces.x
+2 pictures taken
+20.
+object: green small star
+command: world mk smodel star_triangular_faces.x green.bmp 0 3.0 5.24
+rotation: [-10, 0, 0]
+green --> green.bmp
+size --> small
+shape --> star star_with_triangular_faces.x
+2 pictures taken
+# Please vary the distance as well!
+21.
+object: yellow medium star
+command: world mk smodel star_triangular_faces.x yellow.bmp 0 3.0 5.02
+rotation: [-10, 0, 90]
+yellow --> yellow.bmp
+size --> medium
+shape --> star star_with_triangular_faces.x
+2 pictures taken
+22.
+object: yellow medium star
+command: world mk smodel star_triangular_faces.x yellow_2.bmp 0 3.0 5.12
+rotation: [-10, 0, 35]
+yellow --> yellow_2.bmp
+size --> medium
+shape --> star star_with_triangular_faces.x
+2 pictures taken
+# head rotated to pos 0 24
+# Not sure when
+23.
+object: pink medium star
+command: world mk smodel star_triangular_faces.x yellow.bmp 0 3.4 5.5
+rotation: [-15, 0, 30]
+pink --> pink_2.bmp
+size --> medium
+shape --> star star_with_triangular_faces.x
+2 pictures taken
+24.
+object: pink large star
+command: world mk smodel star_triangular_faces.x pink_3.bmp 0 3.36 4.75
+rotation: [-15, 0, 23]
+red --> pink_3.bmp
+size --> large
+shape --> star star_with_triangular_faces.x
+2 pictures taken
+25.
+object: red large star
+command: world mk smodel star_triangular_faces.x red.bmp 0 3.0 5.02
+rotation: [-15, 0, 123]
+red --> red.bmp
+size --> large
+shape --> star star_with_triangular_faces.x
+2 pictures taken
+03/10/2018
+Golden State Warriors will definitely win the NBA 2018 Championship --> The Golden State Warriors!!!!!!
+Resume data collection
+To fill up the missing combination:
+(Once after this step, create a scripting file to randomly select pictures for train and test)
+26.
+object: small green ball
+command: world mk scyl 0.24 0.30 0 1.7 1.7 0.24 247 0.30
+rotation: [-15, 0, 0]
+size --> small [0.24, 0.30] [0, 1.7, 1.7]
+shape --> ball [0.24, 0.30]
+8 pictures taken
+27.
+object: medium green ball
+command: world mk scyl 0.24 0.30 0 1.5 1 0.01 0.87 03.0
+rotation: [-20, 0, 0]
+size --> medium [0.24, 0.30] [0, 1.5, 1]
+shape --> ball [0.24, 0.30]
+2 pictures taken
+28.
+object: large green ball
+command: world mk scyl 0.24 0.30 0 1.35 0.8 0.035 0.89 0.030
+rotation: [-20, 0, 0]
+size --> large [0.24, 0.30] [0, 1.35, 0.8]
+shape --> ball [0.24, 0.30]
+2 pictures taken
+29.
+object: small red ball
+command: world mk scyl 0.24 0.30 0 1.8 1.8 0.89 0.11 0.23
+rotation: [-20, 0, 0]
+size --> small [0.24, 0.30] [0, 1.8, 1.8]
+shape --> ball [0.24, 0.30]
+2 pictures taken
+30.
+object: small yellow ball
+command: world mk scyl 0.24 0.30 0 1.75 1.75 0.98 0.98 0.06
+rotation: [-20, 0, 0]
+size --> small [0.24, 0.30] [0, 1.75, 1.75]
+shape --> ball [0.24, 0.30]
+2 pictures taken
+31.
+object: medium yellow ball
+command: world mk scyl 0.24 0.30 0 1.30 1.24 0.89 0.97 0.1
+rotation: [-20, 0, 0]
+size --> medium [0.24, 0.30] [0, 1.30, 1.24]
+shape --> ball [0.24, 0.30]
+2 pictures taken
+32.
+object: small blue ball
+command: world mk scyl 0.24 0.30 0 1.64 1.64 0.04 0.02 0.97
+rotation: [-20, 0, 0]
+size --> small [0.24, 0.30] [0, 1.64, 1.64]
+shape --> ball [0.24, 0.30]
+2 pictures taken
+33.
+object: large blue ball
+command: world mk scyl 0.24 0.30 0 1.3 0.7 0.3 0.2 0.98
+rotation: [-20, 0, 0]
+size --> large [0.24, 0.30] [0, 1.3, 0.7]
+shape --> ball [0.24, 0.30]
+2 pictures taken
+34.
+object: medium green square
+command: world mk scyl 1 1 1 0 2 2.4 0.03 0.76 0.26
+rotation: [-20, 0, 0]
+size --> medium [1, 1, 1] [0, 2, 2.4]
+shape --> square [1, 1, 1]
+2 pictures taken
+35.
+object: small pink ball
+command: world mk scyl 0.24 0.30 0 2 2 0.98 0.68 0.78
+rotation: [-20, 0, 0]
+size --> small [0.24, 0.30] [0, 2, 2]
+shape --> ball [0.24, 0.30]
+2 pictures taken
+36.
+object: large red square
+command: world mk scyl 1 1 1 0 1.6 1.47 0.94 0.24 0.14
+rotation: [-20, 0, 0]
+size --> medium [1, 1, 1] [0, 1, 1.4]
+shape --> square [1, 1, 1]
+2 pictures taken
+37.
+object: large yellow square
+command: world mk scyl 1 1 1 0 1.6 1.65 0.95 0.95 0.05
+rotation: [-20, 0, 0]
+size --> large [1, 1, 1] [0, 1.6, 1.65]
+shape --> square [1, 1, 1]
+2 picture taken
+38.
+object: medium green star
+command: world smodel star_triangular_faces.x green_100.bmp 0 3.5 5.43
+rotation: [-15, 0, 0]
+size --> medium [0, 3.5, 5.43]
+shape --> star_triangular_faces.x
+2 pictures taken
+39.
+object: large green star
+command: world mk smodel star_triangular_faces.x green_23.bmp 0 3.2 4.6
+rotation: [-15, 0, 0]
+size --> large [0, 3.2, 4.6]
+shape --> star_triangular_faces.x
+2 pictures taken
+40.
+object: small pink star
+command: world mk smodel star_triangular_faces.x pink_3.bmp 0 3.5 5.5
+rotation: [-15, 0, 0]
+size --> small [0, 3.5, 5.5]
+shape --> star_triangular_faces.x
+2 pictures taken
+41.
+object: medium pink star
+command: world mk smodel star_triangular_faces.x pink_35.bmp 0 3.2 5.434
+rotation: [-15, 0, 0]
+size --> large [0, 3.2, 5.434]
+shape --> star_triangular_faces.x
+2 pictures taken
+42.
+object: small red star
+command: world mk smodel star_triangular_faces.x red_2.bmp 0 3.6 5.52
+rotation: [-15, 0, 0]
+size --> large [0, 3.6, 5.52]
+shape --> star_triangular_faces.x
+2 pictures taken
+43.
+object: medium red star
+command: world mk smodel star_triangular_faces.x red_30.bmp 0 3.1 4.57
+rotation: [-15, 0, 11]
+size --> large [0, 3.1, 4.57]
+shape --> star_triangular_faces.x
+2 pictures taken
+44.
+object: large red star
+command: world mk smodel star_triangular_faces.x red.bmp 0 3 4.1
+rotation: [0, 0, 0]
+size --> large [0, 3, 4.1]
+shape --> star_triangular_faces.x
+2 pictures
+45.
+object: small yellow star
+command: world mk smodel star_triangular_faces.x yellow_30.bmp 0 3.4 5.6
+rotation: [-15, 0, 0]
+size --> large [0, 3.4, 5.6]
+shape --> star_triangular_faces.x
+4 pictures taken
+46.
+object: medium blue star
+command: world mk smodel star_triangular_faces.x lightblue.bmp 0 3.0 5.53
+rotation: [-15, 0, 30]
+size --> large [0, 3.0, 5.53]
+shape --> star_triangular_faces.x
+2 pictures taken
