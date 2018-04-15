@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lingle/Desktop/Research
+CMAKE_SOURCE_DIR = /home/lingle/Desktop/Research/Language_Acquisition_iCub-master/Language_Acquisition_iCub/Demo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lingle/Desktop/Research
+CMAKE_BINARY_DIR = /home/lingle/Desktop/Research/Language_Acquisition_iCub-master/Language_Acquisition_iCub/Demo
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -89,17 +89,6 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -122,11 +111,22 @@ install/local/fast: install/local
 
 .PHONY : install/local/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lingle/Desktop/Research/CMakeFiles /home/lingle/Desktop/Research/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lingle/Desktop/Research/Language_Acquisition_iCub-master/Language_Acquisition_iCub/Demo/CMakeFiles /home/lingle/Desktop/Research/Language_Acquisition_iCub-master/Language_Acquisition_iCub/Demo/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lingle/Desktop/Research/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lingle/Desktop/Research/Language_Acquisition_iCub-master/Language_Acquisition_iCub/Demo/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -155,44 +155,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named demo_test
+# Target rules for targets named iCub_pred
 
 # Build rule for target.
-demo_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 demo_test
-.PHONY : demo_test
+iCub_pred: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 iCub_pred
+.PHONY : iCub_pred
 
 # fast build rule for target.
-demo_test/fast:
-	$(MAKE) -f CMakeFiles/demo_test.dir/build.make CMakeFiles/demo_test.dir/build
-.PHONY : demo_test/fast
+iCub_pred/fast:
+	$(MAKE) -f CMakeFiles/iCub_pred.dir/build.make CMakeFiles/iCub_pred.dir/build
+.PHONY : iCub_pred/fast
 
-demo_test.o: demo_test.cpp.o
+iCub_pred.o: iCub_pred.cpp.o
 
-.PHONY : demo_test.o
+.PHONY : iCub_pred.o
 
 # target to build an object file
-demo_test.cpp.o:
-	$(MAKE) -f CMakeFiles/demo_test.dir/build.make CMakeFiles/demo_test.dir/demo_test.cpp.o
-.PHONY : demo_test.cpp.o
+iCub_pred.cpp.o:
+	$(MAKE) -f CMakeFiles/iCub_pred.dir/build.make CMakeFiles/iCub_pred.dir/iCub_pred.cpp.o
+.PHONY : iCub_pred.cpp.o
 
-demo_test.i: demo_test.cpp.i
+iCub_pred.i: iCub_pred.cpp.i
 
-.PHONY : demo_test.i
+.PHONY : iCub_pred.i
 
 # target to preprocess a source file
-demo_test.cpp.i:
-	$(MAKE) -f CMakeFiles/demo_test.dir/build.make CMakeFiles/demo_test.dir/demo_test.cpp.i
-.PHONY : demo_test.cpp.i
+iCub_pred.cpp.i:
+	$(MAKE) -f CMakeFiles/iCub_pred.dir/build.make CMakeFiles/iCub_pred.dir/iCub_pred.cpp.i
+.PHONY : iCub_pred.cpp.i
 
-demo_test.s: demo_test.cpp.s
+iCub_pred.s: iCub_pred.cpp.s
 
-.PHONY : demo_test.s
+.PHONY : iCub_pred.s
 
 # target to generate assembly for a file
-demo_test.cpp.s:
-	$(MAKE) -f CMakeFiles/demo_test.dir/build.make CMakeFiles/demo_test.dir/demo_test.cpp.s
-.PHONY : demo_test.cpp.s
+iCub_pred.cpp.s:
+	$(MAKE) -f CMakeFiles/iCub_pred.dir/build.make CMakeFiles/iCub_pred.dir/iCub_pred.cpp.s
+.PHONY : iCub_pred.cpp.s
 
 # Help Target
 help:
@@ -203,13 +203,13 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... demo_test"
-	@echo "... edit_cache"
+	@echo "... iCub_pred"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... demo_test.o"
-	@echo "... demo_test.i"
-	@echo "... demo_test.s"
+	@echo "... edit_cache"
+	@echo "... iCub_pred.o"
+	@echo "... iCub_pred.i"
+	@echo "... iCub_pred.s"
 .PHONY : help
 
 

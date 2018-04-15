@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lingle/Desktop/Research/Language_Acquisition_iCub-master/Language_Acquisition_iCub/Demo/iCub_pred.cpp
+fstream
+-
+

@@ -11,7 +11,7 @@ include_directories(${OpenCV_INCLUDE_DIR}
 		    ${ICUB_INCLUDE_DIR}
                     ${YARP_INCLUDE_DIR})
 
-add_executable(demo_test demo_test.cpp)
-target_link_libraries(demo_test ${YARP_LIBRARIES}
+add_executable(iCub_pred iCub_pred.cpp)
+target_link_libraries(iCub_pred ${YARP_LIBRARIES}
 			       ${OpenCV_LIBRARIES})
-INSTALL(TARGETS demo_test DESTINATION bin)
+INSTALL(TARGETS iCub_pred DESTINATION bin)

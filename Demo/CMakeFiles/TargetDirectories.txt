@@ -1,0 +1,7 @@
+/home/lingle/Desktop/Research/Language_Acquisition_iCub-master/Language_Acquisition_iCub/Demo/CMakeFiles/install.dir
+/home/lingle/Desktop/Research/Language_Acquisition_iCub-master/Language_Acquisition_iCub/Demo/CMakeFiles/list_install_components.dir
+/home/lingle/Desktop/Research/Language_Acquisition_iCub-master/Language_Acquisition_iCub/Demo/CMakeFiles/rebuild_cache.dir
+/home/lingle/Desktop/Research/Language_Acquisition_iCub-master/Language_Acquisition_iCub/Demo/CMakeFiles/iCub_pred.dir
+/home/lingle/Desktop/Research/Language_Acquisition_iCub-master/Language_Acquisition_iCub/Demo/CMakeFiles/install/strip.dir
+/home/lingle/Desktop/Research/Language_Acquisition_iCub-master/Language_Acquisition_iCub/Demo/CMakeFiles/install/local.dir
+/home/lingle/Desktop/Research/Language_Acquisition_iCub-master/Language_Acquisition_iCub/Demo/CMakeFiles/edit_cache.dir
