@@ -1,0 +1,9 @@
+Note:
+Each row represents the data that are partitioned into the cluster indicated by the row index
+The value in each column represents how many data exist / are predicted in that specific column category
+Each column category is pre-defined to represent different classes:
+For Size: [Small, Medium, Large]
+For color: [Blue, Yellow, Green, Red, Pink]
+For Shape: [Ball, Square, Star]
+Programs are written to compare the cluster indices for accuracy reporting
+So the ground truth is also converted to its corresponding cluster for comparison
